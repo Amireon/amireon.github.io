@@ -17,31 +17,31 @@ export default defineValaxyConfig<UserThemeConfig>({
   themeConfig: {
     banner: {
       enable: true,
-      title: '云游君的小站',
+      title: '因你而在的故事',
       cloud: {
         enable: true,
       },
     },
 
     pages: [
-      {
-        name: '我的小伙伴们',
-        url: '/links/',
-        icon: 'i-ri-genderless-line',
-        color: 'dodgerblue',
-      },
-      {
-        name: '喜欢的女孩子',
-        url: '/girls/',
-        icon: 'i-ri-women-line',
-        color: 'hotpink',
-      },
+      // {
+      //   name: '我的小伙伴们',
+      //   url: '/links/',
+      //   icon: 'i-ri-genderless-line',
+      //   color: 'dodgerblue',
+      // },
+      // {
+      //   name: '喜欢的女孩子',
+      //   url: '/girls/',
+      //   icon: 'i-ri-women-line',
+      //   color: 'hotpink',
+      // },
     ],
 
     footer: {
       since: 2016,
       beian: {
-        enable: true,
+        enable: false,
         icp: '苏ICP备17038157号',
       },
     },
