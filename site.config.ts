@@ -3,7 +3,7 @@ import { defineSiteConfig } from 'valaxy'
 export default defineSiteConfig({
   lang: 'zh-CN',
   title: '',
-  url: 'https://github.com/Amireon',
+  url: 'https://amireon.github.io',
   author: {
     name: 'Amireon',
     avatar: 'https://avatars.githubusercontent.com/u/80996151?v=4',
