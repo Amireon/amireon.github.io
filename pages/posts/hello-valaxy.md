@@ -1,5 +1,6 @@
 ---
 title: Hello, Valaxy!
+excerpt_type: html
 date: 2023-11-22
 updated: 2023-11-23
 categories: Valaxy 
@@ -8,7 +9,12 @@ tags:
 top: 1
 ---
 
+Next Generation Static Blog Framework.
+
+<!-- more -->
+
 ## Valaxy
+
 
 ::: zh-CN
 下一代静态博客框架。

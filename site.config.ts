@@ -11,12 +11,12 @@ export default defineSiteConfig({
   subtitle: '',
   description: '总归是在往前',
   social: [
-    // {
-    //   name: 'RSS',
-    //   link: '/atom.xml',
-    //   icon: 'i-ri-rss-line',
-    //   color: 'orange',
-    // },
+    {
+      name: 'RSS',
+      link: '/atom.xml',
+      icon: 'i-ri-rss-line',
+      color: 'orange',
+    },
     {
       name: 'GitHub',
       link: 'https://github.com/Amireon',
@@ -92,7 +92,7 @@ export default defineSiteConfig({
   ],
 
   search: {
-    enable: false,
+    enable: true,
   },
 
   sponsor: {
