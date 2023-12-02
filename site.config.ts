@@ -7,6 +7,8 @@ export default defineSiteConfig({
   author: {
     name: 'Amireon',
     avatar: 'https://avatars.githubusercontent.com/u/80996151?v=4',
+    email: 'yyycwe@qq.com',
+    link: 'https://github.com/amireon',
   },
   subtitle: '',
   description: '总归是在往前',
@@ -93,6 +95,7 @@ export default defineSiteConfig({
 
   search: {
     enable: true,
+    type: 'algolia',
   },
 
   sponsor: {
