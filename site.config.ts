@@ -43,8 +43,16 @@ export default defineSiteConfig({
   ],
 
   search: {
-    enable: false,
-    type: 'algolia',
+    enable: true,
+    type: 'fuse',
+  },
+
+  fuse: {
+    options: {
+      keys: ['title', 'tags', 'categories', 'excerpt', 'content'],
+    },
+
+
   },
 
   sponsor: {
