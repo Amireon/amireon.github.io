@@ -5,7 +5,6 @@ updated: 2023-12-06
 categories: 考研政治
 tags:
   - 考研政治分析题
-  - 笔记
 top: 1
 excerpt_type: html
 ---
