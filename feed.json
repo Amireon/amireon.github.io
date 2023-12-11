@@ -1,0 +1,62 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Valaxy Blog",
+    "home_page_url": "https://amireon.github.io/",
+    "feed_url": "https://amireon.github.io/feed.json",
+    "description": "总归是在往前",
+    "icon": "https://avatars.githubusercontent.com/u/80996151?v=4",
+    "author": {
+        "name": "Amireon",
+        "url": "https://github.com/amireon"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<p><strong>答题五步法（大牙原创）</strong></p>\n<ul>\n<li>第一步：抛出考点，点明考察内容</li>\n<li>第二步：解释概念，解释知识点</li>\n<li>第三步：阐述关系，涉及两个概念时候，阐述二者的辩证关系</li>\n<li>第四步：方法论，有则写，无则省</li>\n<li>第五步：结合材料，点明知识点与题干的关系。</li>\n</ul>\n",
+            "url": "https://amireon.github.io/posts/xiaosi-mayuan",
+            "title": "肖四马原分析题",
+            "date_modified": "2023-12-11T00:00:00.000Z",
+            "date_published": "2023-12-11T00:00:00.000Z",
+            "author": {
+                "name": "Amireon",
+                "url": "https://github.com/amireon"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p><img src=\"./0001.svg\" alt=\"\"><br>\n<img src=\"./0002.svg\" alt=\"\"><br>\n<img src=\"./0003.svg\" alt=\"\"><br>\n<img src=\"./0004.svg\" alt=\"\"><br>\n<img src=\"./0005.svg\" alt=\"\"><br>\n<img src=\"./0006.svg\" alt=\"\"><br>\n![]</p>\n",
+            "url": "https://amireon.github.io/posts/tuijie9/index",
+            "title": "腿姐9页纸",
+            "date_modified": "2023-12-07T00:00:00.000Z",
+            "date_published": "2023-12-07T00:00:00.000Z",
+            "author": {
+                "name": "Amireon",
+                "url": "https://github.com/amireon"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "",
+            "url": "https://amireon.github.io/posts/xutao-daibei-fenxi",
+            "title": "徐涛带背-分析题",
+            "date_modified": "2023-11-25T00:00:00.000Z",
+            "date_published": "2023-12-06T00:00:00.000Z",
+            "author": {
+                "name": "Amireon",
+                "url": "https://github.com/amireon"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>Next Generation Static Blog Framework.</p>\n",
+            "url": "https://amireon.github.io/posts/hello-valaxy",
+            "title": "Hello, Valaxy!",
+            "date_modified": "2023-11-22T00:00:00.000Z",
+            "date_published": "2023-11-23T00:00:00.000Z",
+            "author": {
+                "name": "Amireon",
+                "url": "https://github.com/amireon"
+            }
+        }
+    ]
+}

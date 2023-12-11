@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://amireon.github.io/</id>
+    <title>Valaxy Blog</title>
+    <updated>2023-12-11T00:20:28.165Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Amireon</name>
+        <email>yyycwe@qq.com</email>
+        <uri>https://github.com/amireon</uri>
+    </author>
+    <link rel="alternate" href="https://amireon.github.io/"/>
+    <link rel="self" href="https://amireon.github.io/atom.xml"/>
+    <subtitle>总归是在往前</subtitle>
+    <logo>https://avatars.githubusercontent.com/u/80996151?v=4</logo>
+    <icon>https://amireon.github.io/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2023 © Amireon</rights>
+    <entry>
+        <title type="html"><![CDATA[肖四马原分析题]]></title>
+        <id>https://amireon.github.io/posts/xiaosi-mayuan</id>
+        <link href="https://amireon.github.io/posts/xiaosi-mayuan"/>
+        <updated>2023-12-11T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>答题五步法（大牙原创）</strong></p>
+<ul>
+<li>第一步：抛出考点，点明考察内容</li>
+<li>第二步：解释概念，解释知识点</li>
+<li>第三步：阐述关系，涉及两个概念时候，阐述二者的辩证关系</li>
+<li>第四步：方法论，有则写，无则省</li>
+<li>第五步：结合材料，点明知识点与题干的关系。</li>
+</ul>
+]]></content>
+        <author>
+            <name>Amireon</name>
+            <email>yyycwe@qq.com</email>
+            <uri>https://github.com/amireon</uri>
+        </author>
+        <published>2023-12-11T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[腿姐9页纸]]></title>
+        <id>https://amireon.github.io/posts/tuijie9/index</id>
+        <link href="https://amireon.github.io/posts/tuijie9/index"/>
+        <updated>2023-12-07T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="./0001.svg" alt=""><br>
+<img src="./0002.svg" alt=""><br>
+<img src="./0003.svg" alt=""><br>
+<img src="./0004.svg" alt=""><br>
+<img src="./0005.svg" alt=""><br>
+<img src="./0006.svg" alt=""><br>
+![]</p>
+]]></content>
+        <author>
+            <name>Amireon</name>
+            <email>yyycwe@qq.com</email>
+            <uri>https://github.com/amireon</uri>
+        </author>
+        <published>2023-12-07T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[徐涛带背-分析题]]></title>
+        <id>https://amireon.github.io/posts/xutao-daibei-fenxi</id>
+        <link href="https://amireon.github.io/posts/xutao-daibei-fenxi"/>
+        <updated>2023-11-25T00:00:00.000Z</updated>
+        <author>
+            <name>Amireon</name>
+            <email>yyycwe@qq.com</email>
+            <uri>https://github.com/amireon</uri>
+        </author>
+        <published>2023-12-06T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello, Valaxy!]]></title>
+        <id>https://amireon.github.io/posts/hello-valaxy</id>
+        <link href="https://amireon.github.io/posts/hello-valaxy"/>
+        <updated>2023-11-22T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>Next Generation Static Blog Framework.</p>
+]]></content>
+        <author>
+            <name>Amireon</name>
+            <email>yyycwe@qq.com</email>
+            <uri>https://github.com/amireon</uri>
+        </author>
+        <published>2023-11-23T00:00:00.000Z</published>
+    </entry>
+</feed>
