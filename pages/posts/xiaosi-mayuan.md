@@ -7,7 +7,7 @@ tags:
     - 考研政治分析题
     - 马原分析题
 top: 1
-excerpt_type: md
+excerpt_type: html
 ---
 
 **答题五步法（大牙原创）**
