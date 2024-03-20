@@ -69,11 +69,14 @@ That' s all. Thank you for your time.
 
 谢谢，我回答完毕了。
 
-## 5，你本科院校和主修课程
+## 5，介绍你的本科院校和主修课程
 
 Thank you for your question.
 
 I studied in XX major of XX school. During my college years, I mainly studied XX, XXX, XXX and other courses, of which XX course is the core course of this major, and the main content is XXX.
+
+I major in Computer Science , in Nanjing University of Finance and Economics . It holds a leading position in the field of economics and management fields, which provides a solid foundation for educating high-quality talents with innovative spirit and practical ability.  In  my opinion, my college is a high-level university with a long history, excellent faculty, and abundant teaching resources, and will make greater contributions to promoting social and economic development in the future.
+
 That' s all. Thank you for your time.
 
 非常感谢老师的提问，我就读于xx学校xx专业，在大学期间我主要学习了xx、xxx、xxx等课程，其中xx课程是本专业的核心课程，主要内容是xxx。谢谢，我回答完毕了。
@@ -134,9 +137,9 @@ That' s all. Thank you for your time.
 
 ## 10，介绍下你的家乡（Tell me about your hometown）
 
-I am from Luoyang, a beautiful city in Henan province. It is famous as the "capital of nine dynasties". Luoyang played a very important role in ancient Chinese history, so it has a rich cultural heritage. There are many marvelous relics in my hometown, which have been well preserved. For example, the Longmen Grottoes is one of the three grottoes in China. And the White Horse Temple is regarded as the cradle of Chinese Buddhism. Besides, Luoyang peony is world-famous.
+I am from Lianyungang, a beautiful city in Jiangsu Province. It is famous as Mount Huaguo, a well-known scenic spot. Mount Huaguo is known as the hometown of "Sun Wukong" from the classic novel "Journey to the West",  and is filled with ancient relics, towering  trees, and jagged peaks. It also boasts scenic spots closely linked to the story of "Journey to the West," such as Water Curtain Cave, Sanyuan Palace, and Jade Maiden Peak, all adding a mysterious and fantastical atmosphere to the mountain.
 
-Many tourists travel to Luoyang to see the beauty of peonies every year. The people in my hometown are friendly. They welcome travelers from all over the world. I love my hometown very much.
+In conclusion, Mount Huaguo is a tourist attraction that combines natural landscapes and cultural landscapes. Whether you are a fan of natural scenery or passionate about cultural history, you can find your own fun and rewards here.
 
 我来自美丽的河南洛阳，它被誉为“九朝古都”。洛阳在中国古代历史上扮演着非常重要的角色，有着非常丰富的文化遗产。我的家乡有许多保存完好的文物。例如，龙门石窟是中国三大石窟之一。白马寺被认为是中国佛教的发源地。此外，洛阳牡丹也是举世闻名。每年都有
 
