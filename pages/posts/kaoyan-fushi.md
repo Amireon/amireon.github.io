@@ -23,6 +23,88 @@ As is well-known, Beijing Normal University is an outstanding collage with perfe
 
 
 
+## 毕设问答
+
+### **1.** **为什么选这个题目/为什么做这个？**
+
+从实际生活出发的。我观察到不少视频网站会选择在传输时对图像或视频进行压缩处理，比如降低图像的分辨率，降低视频的码率，这样做能减轻服务器的负担，但是用户端只能使用低分辨率的图像，还很难转换为高分辨率图像。
+
+我在网上搜索后，发现了图像超分辨率这一low-level任务，我还了解到，在智能显示领域，医学成像领域也有超分的需求。因此便确定了毕设的课题，最后的成果还能为自己提供服务。
+
+研究背景（可以混在课题选择和研究目的里）：也就是研究意义
+
+> 图像压缩传输领域：为了降低海量数据对传输带宽的压力，图像或视频数据在传输时会进行压缩处理，比如降低图像的分辨率。但是人们对这些图像或视频的清晰度要求是很高的，因此在接收端就需要使用图像超分辨率技术来提升分辨率，尽可能重建出原有的高清图像或视频。
+>
+> 智能显示领域：普通摄像头拍摄的图像分辨率一般偏低，不能满足高分辨率的视觉要求。目前 4K 高清显示逐渐走向普及，但很多成像设备拍摄的图片以及老电影的像素分辨率远不及 4K。
+>
+> 医学成像领域：医学仪器采集得到的图像分辨率通常偏低，高分辨率医学影像有利于发现微小的病灶。
+
+### 2.怎么具体做的？
+
+**研究目的-研究方法-思路设计-目前的进度、难点及拟解决方案**
+
+**在每个环节都要体现两点：研究支持和个人思考。**
+
+- 研究目的：提高图像的分辨率；丰富图像的纹理细节
+
+- 研究方法：读文献=>使用
+
+ 超分综述长文：https://blog.csdn.net/Wenyuanbo/article/details/125428995
+
+一问读懂SRGAN：https://blog.csdn.net/MR_kdcon/article/details/123525914
+
+ **（1）为什么选择深度学习(GAN)？（为什么选择某个方法或理论）**
+
+ 阅读过几篇超分综述，将超分算法分为三大类：基于插值，基于重建，基于学习的方法。
+
+基于插值的方法，问题在于假设图像连续，重建结果往往边缘和轮廓模糊，纹理细节丢失，重建效果十分有限。
+
+基于重建的方法使用先验知识获得局部最优解，但往往收敛不理想。
+
+ 目前主流方法是基于深度学习即CNN的方法。基于学习的超分辨率算法拥有优秀的细节表征能力，在重建结果上取得了远超传统算法的优势。因此我最终选择了CNN作为主要方法。
+
+此外，我还了解到Transformer在图像超分辨率领域获得了成功，但是Vision Transformer所需的硬件成本过高（高计算成本和高GPU占用），难以纳入考虑范围。
+
+ **（2）方法（网络结构，损失函数）**
+
+沿用了GAN的基本结构：生成器和判别器。
+
+ 生成网络用一个卷积层学习底层特征，多个卷积层（一个深度网络）学习高层特征，通过一个反卷积层和一个卷积层输出重建图像。
+
+ 判别网络就是一个简单的CNN网络，其实就是一个VGG网络，最后使用一个Sigmoid函数做一个二分类任务。
+
+ **（3）有遇到过什么问题吗？** 
+
+客观评价指标的选择。目前评价超分重建最常用的客观评价指标有峰值信噪比PSNR，均方误差MSE和结构相似性SSIM。这些指标需要使用真实的高分辨率图像作为参考，来评价重建后的超分图像与真实图像之间的相似度，相似度越高，重建效果越好。
+
+但是时常遇到，重建的超分图像的主观评价高，但客观评价低的情况，这是个非常矛盾的情况。在阅读文献后，我使用了SRGAN作者提出的感知损失。SRGAN本质上是提供了一种新的Loss function——perceptual loss(感知损失)。
+
+感知损失由内容损失和对抗损失组成。内容损失：取MSE或者VGG损失，以及一定比率的对抗损失(GAN网络本身就有的损失函数)组成。
+
+> 为什么MSE损失不行？
+>
+> 之前的SR都是由MSE损失函数来教会网络如何实现LR→HR。MSE会对图像的细节进行平滑，网络在训练中会让重建图像具有很高的PSNR，但是失去了人肉眼感知的高分辨感，即论文中的Photo-Realistic。
+
+> 为什么感知损失(VGG损失)行？
+>
+> VGG损失是feature-map-wise，它比MSE更能衡量感知上的相似度。feature-map-wise是对HR和SR图像整体做loss，因此它提升的是SR图像整体感知；而MSE是针对像素级(pixel-wise)，这样很容易将图像局部细节平滑掉。
+>
+> VGG损失，所谓的VGG损失是作者采用预训练好的VGG-19网络的特征向量，使得生成网络的结果通过VGG某一层之后产生的feature map，和标签  $I ^ (HR)$ 通过VGG网络产生的feature map做loss。这种loss更能反应图片之间的感知相似度。
+
+
+
+### 3.我的收获
+
+**谈自己在毕设过程中的收获更切实。**
+
+通过毕业设计，初步涉足了科研生活，切身体会了遇到问题、分析问题、解决问题的过程，觉得这个过程挺有趣。自己更加向往研究生阶段去更好地探索问题。
+
+通过毕设，将之前学习的知识与实际应用联系了起来，让理论指导了实践，给自己了一种充实感和满足感。除此之外，把自己学习的知识串联了起来，让它们能在一个整体中发挥各自的作用，让自己对学过的东西有了更高层次的理解。
+
+从0开始学习深度学习，到实现自己的毕业设计，选择研究课题，确定网络结构，选择激活函数，合理初始化权重、使用BatchNorm应对梯度消失，梯度爆炸，选择合适的优化方法，不停地调整参数，到最后完成作品，非常的满足。
+
+
+
 ## 1，自我介绍（Please introduce yourself）
 
 Good morning professors, my name is xxx. I'm from xx University，My major is xxx.
@@ -113,9 +195,9 @@ That' s all. Thank you for your time.
 
 Thank you for your question.
 
-My major is ___ and one of my favorite books about my major is ___. It’s written by ___ in ___(年份). And it’s mainly about ___. It can act as a perfect guidance in my study, especially when I’m confused by some complicated principles in my major. The other reason why I love this book is that it seems that every issue mentioned in the book has been well-considered. The profound meaning behind the book is more than what it just appears. I’m particularly impressed by the part elaborating that ______. I believe the point is pretty convincing and inviting. It convinces me of the critical significance in ______.
+My major is Computer Science and one of my favorite books about is  DataStrute and algorithm.  It acts as a perfect guidance in my study, especially when I’m confused by some complicated principles . The other reason why I love this book is that it seems that every issue mentioned in the book has been well-considered. The profound meaning behind the book is more than what it just appears. 
 
-All in all, I’ve learned a lot from this impressive book. It is the first book that I’ve taken seriously, but it’s never gonna be the last.
+All in all, I’ve learned a lot from this impressive book. It is a book that I’ve taken seriously, but it’s never gonna be the last.
 
 That' s all. Thank you for your time.
 
