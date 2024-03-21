@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://amireon.github.io/</id>
+    <title>Valaxy Blog</title>
+    <updated>2024-03-21T14:06:49.492Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Amireon</name>
+        <email>yyycwe@qq.com</email>
+        <uri>https://github.com/amireon</uri>
+    </author>
+    <link rel="alternate" href="https://amireon.github.io/"/>
+    <link rel="self" href="https://amireon.github.io/atom.xml"/>
+    <subtitle>总归是在往前</subtitle>
+    <logo>https://avatars.githubusercontent.com/u/80996151?v=4</logo>
+    <icon>https://amireon.github.io/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2024 © Amireon</rights>
+    <entry>
+        <title type="html"><![CDATA[复试英语问答]]></title>
+        <id>https://amireon.github.io/posts/kaoyan-fushi</id>
+        <link href="https://amireon.github.io/posts/kaoyan-fushi"/>
+        <updated>2024-02-26T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>英语自我介绍</h2>
+<p>Good (morning), professors. I feel honored to have the opportunity to address you here t</p>
+]]></content>
+        <author>
+            <name>Amireon</name>
+            <email>yyycwe@qq.com</email>
+            <uri>https://github.com/amireon</uri>
+        </author>
+        <published>2024-03-03T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello, Valaxy!]]></title>
+        <id>https://amireon.github.io/posts/hello-valaxy</id>
+        <link href="https://amireon.github.io/posts/hello-valaxy"/>
+        <updated>2023-11-22T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>Next Generation Static Blog Framework.</p>
+]]></content>
+        <author>
+            <name>Amireon</name>
+            <email>yyycwe@qq.com</email>
+            <uri>https://github.com/amireon</uri>
+        </author>
+        <published>2023-11-23T00:00:00.000Z</published>
+    </entry>
+</feed>

@@ -1,0 +1,38 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Valaxy Blog",
+    "home_page_url": "https://amireon.github.io/",
+    "feed_url": "https://amireon.github.io/feed.json",
+    "description": "总归是在往前",
+    "icon": "https://avatars.githubusercontent.com/u/80996151?v=4",
+    "author": {
+        "name": "Amireon",
+        "url": "https://github.com/amireon"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<h2>英语自我介绍</h2>\n<p>Good (morning), professors. I feel honored to have the opportunity to address you here t</p>\n",
+            "url": "https://amireon.github.io/posts/kaoyan-fushi",
+            "title": "复试英语问答",
+            "date_modified": "2024-02-26T00:00:00.000Z",
+            "date_published": "2024-03-03T00:00:00.000Z",
+            "author": {
+                "name": "Amireon",
+                "url": "https://github.com/amireon"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>Next Generation Static Blog Framework.</p>\n",
+            "url": "https://amireon.github.io/posts/hello-valaxy",
+            "title": "Hello, Valaxy!",
+            "date_modified": "2023-11-22T00:00:00.000Z",
+            "date_published": "2023-11-23T00:00:00.000Z",
+            "author": {
+                "name": "Amireon",
+                "url": "https://github.com/amireon"
+            }
+        }
+    ]
+}
