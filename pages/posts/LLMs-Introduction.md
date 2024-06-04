@@ -34,7 +34,7 @@ excerpt_type: html
 - 绿色分支：编码器-解码器
 - 蓝色分支：仅解码器
 
-![LLM进化树图](LLM-Introduction.assets\x1.png)
+![LLM进化树图](./LLM-Introduction.assets/x1.png)
 
 论文([Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond]([https://arxiv.org/abs/2304.13712](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2304.13712)))：[https://arxiv.org/abs/2304.13712](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2304.13712)内容简介
 
@@ -44,7 +44,7 @@ excerpt_type: html
 
 下表是大预言模型的概述
 
-![大语言模型概述](LLMs-Introduction.assets\image-20240604200153980.png)
+![大语言模型概述](./LLMs-Introduction.assets/image-20240604200153980.png)
 
 ## 2.LLMs的核心概念
 
