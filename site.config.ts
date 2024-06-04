@@ -51,8 +51,6 @@ export default defineSiteConfig({
     options: {
       keys: ['title', 'tags', 'categories', 'excerpt', 'content'],
     },
-
-
   },
 
   sponsor: {

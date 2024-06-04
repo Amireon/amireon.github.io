@@ -6,7 +6,6 @@ updated: 2023-11-23
 categories: Valaxy 
 tags:
   - valaxy
-top: 1
 ---
 
 Next Generation Static Blog Framework.
