@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://amireon.github.io/</id>
+    <title>Valaxy Blog</title>
+    <updated>2024-06-24T09:46:49.070Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Amireon</name>
+        <email>yyycwe@qq.com</email>
+        <uri>https://github.com/amireon</uri>
+    </author>
+    <link rel="alternate" href="https://amireon.github.io/"/>
+    <link rel="self" href="https://amireon.github.io/atom.xml"/>
+    <subtitle>总归是在往前</subtitle>
+    <logo>https://avatars.githubusercontent.com/u/80996151?v=4</logo>
+    <icon>https://amireon.github.io/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2024 © Amireon</rights>
+    <entry>
+        <title type="html"><![CDATA[GPT-4技术报告阅读笔记]]></title>
+        <id>https://amireon.github.io/posts/LLMs-GPT-4</id>
+        <link href="https://amireon.github.io/posts/LLMs-GPT-4"/>
+        <updated>2024-06-04T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>阅读 GPT-4 技术报告后的一点感想，链接：<a href="https://ar5iv.labs.arxiv.org/html/2303.08774">https://ar5iv.labs.arxiv.org/html/2303.08774</a></p>
+]]></content>
+        <author>
+            <name>Amireon</name>
+            <email>yyycwe@qq.com</email>
+            <uri>https://github.com/amireon</uri>
+        </author>
+        <published>2024-06-04T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LLMs从关键概念到应用]]></title>
+        <id>https://amireon.github.io/posts/LLMs-Introduction</id>
+        <link href="https://amireon.github.io/posts/LLMs-Introduction"/>
+        <updated>2024-06-04T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>近期大语言模型迅速发展，让大家看得眼花缭乱，各个模型之间的关系也让人看的云里雾里。最近一些学者整理出了 ChatGPT 等语言模型的发展历程的进化树图，让大家可以对LLM之间的关系一目了然。</p>
+<blockquote>
+<ul>
+<li>
+<p>大预言模型的进化树： <a href="https://blog.csdn.net/hawkman/article/details/130641688">https://blog.csdn.net/hawkman/article/details/130641688</a></p>
+</li>
+<li>
+<p>从关键概念到应用：深入了解大规模语言模型（LLM）：<a href="https://blog.csdn.net/universsky2015/article/details/139382354">https://blog.csdn.net/universsky2015/article/details/139382354</a></p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>
+<p>论文(Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond)：<a href="https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2304.13712">https://arxiv.org/abs/2304.13712</a></p>
+</li>
+<li>
+<p>Github相关资源：<a href="https://www.github.com/Mooler0410/LLMsPracticalGuide">https://github.com/Mooler0410/LLMsPracticalGuide</a></p>
+</li>
+</ul>
+]]></content>
+        <author>
+            <name>Amireon</name>
+            <email>yyycwe@qq.com</email>
+            <uri>https://github.com/amireon</uri>
+        </author>
+        <published>2024-06-04T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Transformer阅读]]></title>
+        <id>https://amireon.github.io/posts/LLMs-Transformer</id>
+        <link href="https://amireon.github.io/posts/LLMs-Transformer"/>
+        <updated>2024-06-04T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>阅读 Transformer 论文的笔记，</p>
+<p>论文：<a href="https://arxiv.org/abs/1706.03762">https://arxiv.org/abs/1706.03762</a></p>
+<p>Transformer论文逐段精读：<a href="https://www.bilibili.com/video/BV1pu411o7BE">https://www.bilibili.com/video/BV1pu411o7BE</a></p>
+<p>Transformer常见问题与回答：<a href="https://zhuanlan.zhihu.com/p/496012402">https://zhuanlan.zhihu.com/p/496012402</a></p>
+]]></content>
+        <author>
+            <name>Amireon</name>
+            <email>yyycwe@qq.com</email>
+            <uri>https://github.com/amireon</uri>
+        </author>
+        <published>2024-06-04T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello, Valaxy!]]></title>
+        <id>https://amireon.github.io/posts/hello-valaxy</id>
+        <link href="https://amireon.github.io/posts/hello-valaxy"/>
+        <updated>2023-11-22T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>Next Generation Static Blog Framework.</p>
+]]></content>
+        <author>
+            <name>Amireon</name>
+            <email>yyycwe@qq.com</email>
+            <uri>https://github.com/amireon</uri>
+        </author>
+        <published>2023-11-23T00:00:00.000Z</published>
+    </entry>
+</feed>

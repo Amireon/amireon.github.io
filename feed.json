@@ -1,0 +1,62 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Valaxy Blog",
+    "home_page_url": "https://amireon.github.io/",
+    "feed_url": "https://amireon.github.io/feed.json",
+    "description": "总归是在往前",
+    "icon": "https://avatars.githubusercontent.com/u/80996151?v=4",
+    "author": {
+        "name": "Amireon",
+        "url": "https://github.com/amireon"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<p>阅读 GPT-4 技术报告后的一点感想，链接：<a href=\"https://ar5iv.labs.arxiv.org/html/2303.08774\">https://ar5iv.labs.arxiv.org/html/2303.08774</a></p>\n",
+            "url": "https://amireon.github.io/posts/LLMs-GPT-4",
+            "title": "GPT-4技术报告阅读笔记",
+            "date_modified": "2024-06-04T00:00:00.000Z",
+            "date_published": "2024-06-04T00:00:00.000Z",
+            "author": {
+                "name": "Amireon",
+                "url": "https://github.com/amireon"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>近期大语言模型迅速发展，让大家看得眼花缭乱，各个模型之间的关系也让人看的云里雾里。最近一些学者整理出了 ChatGPT 等语言模型的发展历程的进化树图，让大家可以对LLM之间的关系一目了然。</p>\n<blockquote>\n<ul>\n<li>\n<p>大预言模型的进化树： <a href=\"https://blog.csdn.net/hawkman/article/details/130641688\">https://blog.csdn.net/hawkman/article/details/130641688</a></p>\n</li>\n<li>\n<p>从关键概念到应用：深入了解大规模语言模型（LLM）：<a href=\"https://blog.csdn.net/universsky2015/article/details/139382354\">https://blog.csdn.net/universsky2015/article/details/139382354</a></p>\n</li>\n</ul>\n</blockquote>\n<ul>\n<li>\n<p>论文(Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond)：<a href=\"https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2304.13712\">https://arxiv.org/abs/2304.13712</a></p>\n</li>\n<li>\n<p>Github相关资源：<a href=\"https://www.github.com/Mooler0410/LLMsPracticalGuide\">https://github.com/Mooler0410/LLMsPracticalGuide</a></p>\n</li>\n</ul>\n",
+            "url": "https://amireon.github.io/posts/LLMs-Introduction",
+            "title": "LLMs从关键概念到应用",
+            "date_modified": "2024-06-04T00:00:00.000Z",
+            "date_published": "2024-06-04T00:00:00.000Z",
+            "author": {
+                "name": "Amireon",
+                "url": "https://github.com/amireon"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>阅读 Transformer 论文的笔记，</p>\n<p>论文：<a href=\"https://arxiv.org/abs/1706.03762\">https://arxiv.org/abs/1706.03762</a></p>\n<p>Transformer论文逐段精读：<a href=\"https://www.bilibili.com/video/BV1pu411o7BE\">https://www.bilibili.com/video/BV1pu411o7BE</a></p>\n<p>Transformer常见问题与回答：<a href=\"https://zhuanlan.zhihu.com/p/496012402\">https://zhuanlan.zhihu.com/p/496012402</a></p>\n",
+            "url": "https://amireon.github.io/posts/LLMs-Transformer",
+            "title": "Transformer阅读",
+            "date_modified": "2024-06-04T00:00:00.000Z",
+            "date_published": "2024-06-04T00:00:00.000Z",
+            "author": {
+                "name": "Amireon",
+                "url": "https://github.com/amireon"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>Next Generation Static Blog Framework.</p>\n",
+            "url": "https://amireon.github.io/posts/hello-valaxy",
+            "title": "Hello, Valaxy!",
+            "date_modified": "2023-11-22T00:00:00.000Z",
+            "date_published": "2023-11-23T00:00:00.000Z",
+            "author": {
+                "name": "Amireon",
+                "url": "https://github.com/amireon"
+            }
+        }
+    ]
+}

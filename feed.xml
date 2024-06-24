@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Valaxy Blog</title>
+        <link>https://amireon.github.io/</link>
+        <description>总归是在往前</description>
+        <lastBuildDate>Mon, 24 Jun 2024 09:46:49 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Valaxy Blog</title>
+            <url>https://avatars.githubusercontent.com/u/80996151?v=4</url>
+            <link>https://amireon.github.io/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2024 © Amireon</copyright>
+        <atom:link href="https://amireon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[GPT-4技术报告阅读笔记]]></title>
+            <link>https://amireon.github.io/posts/LLMs-GPT-4</link>
+            <guid>https://amireon.github.io/posts/LLMs-GPT-4</guid>
+            <pubDate>Tue, 04 Jun 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>阅读 GPT-4 技术报告后的一点感想，链接：<a href="https://ar5iv.labs.arxiv.org/html/2303.08774">https://ar5iv.labs.arxiv.org/html/2303.08774</a></p>
+]]></content:encoded>
+            <author>yyycwe@qq.com (Amireon)</author>
+        </item>
+        <item>
+            <title><![CDATA[LLMs从关键概念到应用]]></title>
+            <link>https://amireon.github.io/posts/LLMs-Introduction</link>
+            <guid>https://amireon.github.io/posts/LLMs-Introduction</guid>
+            <pubDate>Tue, 04 Jun 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>近期大语言模型迅速发展，让大家看得眼花缭乱，各个模型之间的关系也让人看的云里雾里。最近一些学者整理出了 ChatGPT 等语言模型的发展历程的进化树图，让大家可以对LLM之间的关系一目了然。</p>
+<blockquote>
+<ul>
+<li>
+<p>大预言模型的进化树： <a href="https://blog.csdn.net/hawkman/article/details/130641688">https://blog.csdn.net/hawkman/article/details/130641688</a></p>
+</li>
+<li>
+<p>从关键概念到应用：深入了解大规模语言模型（LLM）：<a href="https://blog.csdn.net/universsky2015/article/details/139382354">https://blog.csdn.net/universsky2015/article/details/139382354</a></p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>
+<p>论文(Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond)：<a href="https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2304.13712">https://arxiv.org/abs/2304.13712</a></p>
+</li>
+<li>
+<p>Github相关资源：<a href="https://www.github.com/Mooler0410/LLMsPracticalGuide">https://github.com/Mooler0410/LLMsPracticalGuide</a></p>
+</li>
+</ul>
+]]></content:encoded>
+            <author>yyycwe@qq.com (Amireon)</author>
+        </item>
+        <item>
+            <title><![CDATA[Transformer阅读]]></title>
+            <link>https://amireon.github.io/posts/LLMs-Transformer</link>
+            <guid>https://amireon.github.io/posts/LLMs-Transformer</guid>
+            <pubDate>Tue, 04 Jun 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>阅读 Transformer 论文的笔记，</p>
+<p>论文：<a href="https://arxiv.org/abs/1706.03762">https://arxiv.org/abs/1706.03762</a></p>
+<p>Transformer论文逐段精读：<a href="https://www.bilibili.com/video/BV1pu411o7BE">https://www.bilibili.com/video/BV1pu411o7BE</a></p>
+<p>Transformer常见问题与回答：<a href="https://zhuanlan.zhihu.com/p/496012402">https://zhuanlan.zhihu.com/p/496012402</a></p>
+]]></content:encoded>
+            <author>yyycwe@qq.com (Amireon)</author>
+        </item>
+        <item>
+            <title><![CDATA[Hello, Valaxy!]]></title>
+            <link>https://amireon.github.io/posts/hello-valaxy</link>
+            <guid>https://amireon.github.io/posts/hello-valaxy</guid>
+            <pubDate>Thu, 23 Nov 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>Next Generation Static Blog Framework.</p>
+]]></content:encoded>
+            <author>yyycwe@qq.com (Amireon)</author>
+        </item>
+    </channel>
+</rss>
