@@ -3,11 +3,11 @@ title: LLMs从关键概念到应用
 date: 2024-06-04
 updated: 2024-06-04
 categories:
-  - AI
   - NLP
 tags:
   - NLP
   - LLMs
+  - book
 excerpt_type: html
 ---
 
@@ -34,7 +34,7 @@ excerpt_type: html
 - 绿色分支：编码器-解码器
 - 蓝色分支：仅解码器
 
-![LLM进化树图](./LLM-Introduction.assets/x1.png)
+![LLM进化树图](./LLMs-Introduction.assets/x1.png)
 
 论文([Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond]([https://arxiv.org/abs/2304.13712](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2304.13712)))：[https://arxiv.org/abs/2304.13712](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2304.13712)内容简介
 

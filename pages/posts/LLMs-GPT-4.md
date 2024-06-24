@@ -3,11 +3,11 @@ title: GPT-4技术报告阅读笔记
 date: 2024-06-04
 updated: 2024-06-04
 categories: 
-  - AI
   - NLP
 tags:
   - NLP
   - LLM
+  - book
 excerpt_type: html
 ---
 
@@ -43,7 +43,9 @@ excerpt_type: html
 >
 > 目的：RLHF让模型得知使用者的意图和让它做什么，根据使用者的喜好回答问题
 
+衍生思考：系统构建（大模型的训练，工程的构建）
 
+给用户的使用的统一API，根据用户的输入生成`prompt`（反映用户需求），然后根据prompt调用各自的API（意味着许多下游任务）
 
 ## 预测scaling(Predictable scaling)
 

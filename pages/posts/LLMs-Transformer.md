@@ -3,11 +3,11 @@ title: Transformer阅读
 date: 2024-06-04
 updated: 2024-06-04
 categories:
-  - AI
   - NLP
 tags:
   - NLP
   - LLMs
+  - paper
 excerpt_type: html
 ---
 
