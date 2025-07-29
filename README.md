@@ -1,52 +1,24 @@
-# create-valaxy
-
-Example: [valaxy.site](https://valaxy.site)
-
-## Usage
-
-```bash
-# install
-npm i
-# or pnpm i
-
-# start
-npm run dev
-# or pnpm dev
-```
-
-See `http://localhost:4859/`, have fun!
-
-### Config
-
-Modify `valaxy.config.ts` to custom your blog.
-
-English & Chinese Docs is coming!
-
-> Wait a minute.
-
-### Docker
-
-```bash
-docker build . -t your-valaxy-blog-name:latest
-```
-
-## Structure
-
-In most cases, you only need to work in the `pages` folder.
-
-### Main folders
-
-- `pages`: your all pages
-  - `posts`: write your posts here, will be counted as posts
-- `styles`: override theme styles, `index.scss`/`vars.csss`/`index.css` will be loaded automatically
-- `components`: custom your vue components (will be loaded automatically)
-- `layouts`: custom layouts (use it by `layout: xxx` in md)
-- `locales`: custom i18n
-
-### Other
-
-- `.vscode`: recommend some useful plugins & settings, you can preview icon/i18n/class...
-- `.github`: GitHub Actions to auto build & deploy to GitHub Pages
-- `netlify.toml`: for [netlify](https://www.netlify.com/)
-- `vercel.json`: for [vercel](https://vercel.com/)
 # amireon.github.io
+
+A blog website built with [Valaxy](https://valaxy.site/).
+
+## LeetCode 算法题
+## 面试经典 150 题
+https://leetcode.cn/studyplan/top-interview-150/
+
+最经典 150 题，掌握面试所有知识点。
+
+- 涵盖所有面试考点并构建完整知识体系
+- 沉淀 150 道经典面试力扣题
+- 通过引导式题目练习深入掌握每个知识点
+- 适合有 6 个月以上时间准备面试的用户
+
+## LeetCode 热题 100
+https://leetcode.cn/studyplan/top-100-liked/
+
+力扣最受刷题发烧友欢迎的 100 道题
+
+- 站内用户最喜爱的 100 道题
+- 站内最经典的 100 道题
+- 刷题发烧友的必备题单
+
