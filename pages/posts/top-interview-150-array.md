@@ -577,3 +577,139 @@ int hIndex(int* citations, int citationsSize) {
 }
 ```
 
+## 380. O(1) 时间插入、删除和获取随机元素
+https://leetcode.cn/problems/insert-delete-getrandom-o1/description/?envType=study-plan-v2&envId=top-interview-150
+
+【题干】
+
+实现 `RandomizedSet` 类：
+
+- `RandomizedSet()` 初始化 `RandomizedSet` 对象
+- `bool insert(int val)` 当元素 `val` 不存在时，向集合中插入该项，并返回 `true` ；否则，返回 `false` 。
+- `bool remove(int val)` 当元素 `val` 存在时，从集合中移除该项，并返回 `true` ；否则，返回 `false` 。
+- `int getRandom()` 随机返回现有集合中的一项（测试用例保证调用此方法时集合中至少存在一个元素）。每个元素应该有相同的概率被返回。
+
+你必须实现类的所有函数，并满足每个函数的 平均 时间复杂度为 `O(1)` 。
+
+【分析】
+
+变长数组可以在 O(1)的时间内随机获取元素，但无法保证元素是否存在。如果加上判断操作，时间复杂度为 O(n)。同样地，插入和删除操作都无法在 O(1)的时间内完成。
+
+哈希表可以在 O(1) 的时间内完成插入和删除操作，但在不提供下标的情况下，无法在 O(1)的时间内随机获取某个元素。
+
+因此，结合变长数组和哈希表：
+- 变长数组：存储元素
+- 哈希表：键为元素，值为元素在数组中的下标
+
+插入操作：
+1. 判断 `val` 是否在哈希表中，在就返回 `true`，不在进入 2.
+2. 将 `val` 插入数组末尾，记录下标 idx
+3. 将 `val - idx` 插入哈希表
+
+删除操作：
+1. 判断 `val` 是否在哈希表中，不在返回 `false`，在进入 2.
+2. 从哈希表中得到 `val` 的下标 `idx`
+3. 将数组的最后一个元素`last` 复制到 `idx`, 在哈希表中将 `last`的下标改为`idx`
+4. 在数组中删除最后一个元素，在哈希表中删除 `val`
+
+【代码】
+
+```c++
+class RandomizedSet {
+private:
+    vector<int> nums;
+    unordered_map<int, int> indices;
+
+public:
+    RandomizedSet() {
+        srand((unsigned)time(NULL));
+    }
+    
+    bool insert(int val) {
+        if (indices.count(val)) {
+            return false;
+        }
+        int index = nums.size();
+        nums.emplace_back(val);
+        indices[val] = index;
+        return true;
+    }
+    
+    bool remove(int val) {
+        if (!indices.count(val)) {
+            return false;
+        }
+        int index = indices[val];
+        int last = nums.back();
+        nums[index] = last;
+        indices[last] = index;
+        nums.pop_back();
+        indices.erase(val);
+        return true;
+    }
+    
+    int getRandom() {
+        int randomIndex = rand() % nums.size();
+        return nums[randomIndex];
+    }
+};
+```
+
+## 238. 除自身以外数组的乘积
+
+https://leetcode.cn/problems/product-of-array-except-self/description/?envType=study-plan-v2&envId=top-interview-150
+
+【题干】
+
+给你一个整数数组 `nums`，返回 数组 `answer` ，其中 `answer[i]` 等于 `nums` 中除 `nums[i]` 之外其余各元素的乘积 。
+
+题目数据保证数组 `nums` 之中任意元素的全部前缀元素和后缀的乘积都在 32 位整数范围内。
+
+请不要使用除法，且在 `O(n)` 时间复杂度内完成此题。
+
+进阶：你可以在 O(1) 的额外空间复杂度内完成这个题目吗？（ 出于对空间复杂度分析的目的，输出数组 不被视为 额外空间。）
+
+【分析】
+
+官方题解：https://leetcode.cn/problems/product-of-array-except-self/solutions/272369/chu-zi-shen-yi-wai-shu-zu-de-cheng-ji-by-leetcode-/?envType=study-plan-v2&envId=top-interview-150
+
+暴力法，将所有元素乘在一起，然后对数组的每个元素`x`，将总乘积除以`x`获得答案，但不允许使用除法。
+
+题干中提到了前缀积和后缀积。我们不必将所有数字的乘积除以给定索引处的数字得到相应的答案，而是利用索引左侧所有数字的乘积和右侧所有数字的乘积（即前缀与后缀）相乘得到答案。
+> 真没想到这个做法
+
+**算法**
+- 初始化两个空数组 `L` 和 `R`。对于给定索引 `i`，`L[i]` 代表的是 `i` 左侧所有数字的乘积，`R[i]` 代表的是 `i` 右侧所有数字的乘积。
+- 我们需要用两个循环来填充 `L` 和 `R` 数组的值。对于数组 `L`，`L[0]` 应该是 1，因为第一个元素的左边没有元素。对于其他元素：`L[i] = L[i-1] * nums[i-1]`。
+- 同理，对于数组 `R`，`R[length-1]` 应为 1。`length` 指的是输入数组的大小。其他元素：`R[i] = R[i+1] * nums[i+1]`。
+- 当 `R` 和 `L` 数组填充完成，我们只需要在输入数组上迭代，且索引 `i` 处的值为：`L[i] * R[i]`。
+
+官解还给了两个优化版本
+- 优化一：将`answer` 数组当做 `L` 用，那么索引 `i` 处的值为：`answer[i] = answer[i] * R[i]`
+- 优化二：将 `R[]` 省略掉，用一个累乘值 `r == 1` 作为后缀积，那么索引 `i` 处的值为：`answer[i] = answer[i] * r, r = r * nums[i]`
+
+【代码】
+
+```c++
+class Solution {
+public:
+    vector<int> productExceptSelf(vector<int>& nums) {
+        int length = nums.size(), R = 1;
+        vector<int> answer(length);
+
+        // answer[i] 为索引 i 左侧所有元素的乘积
+        answer[0] = 1;
+        for (int i = 1; i < length; i++) {
+            answer[i] = nums[i - 1] * answer[i - 1];
+        }
+
+        // R 为索引 i 右侧所有元素的乘积
+        for (int i = length - 1; i >= 0; i--) {
+            answer[i] = answer[i] * R;
+            R = R * nums[i];
+        }
+
+        return answer;
+    }
+};
+```
