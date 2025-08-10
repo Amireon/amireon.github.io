@@ -713,3 +713,233 @@ public:
     }
 };
 ```
+
+## 134. 加油站
+
+https://leetcode.cn/problems/gas-station/description/?envType=study-plan-v2&envId=top-interview-150
+
+【题干】
+
+在一条环路上有 `n` 个加油站，其中第 `i` 个加油站有汽油 `gas[i]` 升。
+
+你有一辆油箱容量无限的的汽车，从第 `i` 个加油站开往第 `i+1` 个加油站需要消耗汽油 `cost[i]` 升。你从其中的一个加油站出发，开始时油箱为空。
+
+给定两个整数数组 `gas` 和 `cost` ，如果你可以按顺序绕环路行驶一周，则返回出发时加油站的编号，否则返回 `-1` 。如果存在解，则 保证 它是 唯一 的。
+
+【分析】
+
+假设起始点为 `start`，那么从 `0` 到 `start` 需要耗费的总油量 `allcost == cost[0] + ... + cost[start - 1]`，油箱的油量`allgas == gas[0+..+start-1]`，`allgas - allcost`的值为 `total`（有可能是负的，负的表示欠了）代表油箱剩余量，那么只需要到最后一个站之后的 `total` 不是负数，就表示能绕一圈。
+
+能否绕一圈的问题解决了，现在考虑从哪个点出发。我们知道，`i` 是否是出发点，取决于 `gas[i]`是否大于 等于`cost[i]`，用一个值记录当前油箱剩余量 `cap`，`cap >= 0`，能到达; `cap < 0`,将起始点换成下一个点 i+1，同时记录下 `gap[i]` 与 `cost[i]` 的差值。
+
+【代码】
+
+```c++
+class Solution {
+public:
+    int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
+        int total = 0, cap = 0, tmp; // 剩余总油量, 当前油量, 中间值
+        int start = 0;  // 起始位置
+        for(int i = 0; i < gas.size(); i++){
+            tmp = gas[i] - cost[i];
+            total += tmp;
+            cap += tmp;
+            if(cap < 0){
+                // 当前油量不足以到达i+1, 换起始点
+                start = i + 1;
+                cap = 0;
+            }
+        }
+        return total >= 0 ? start : -1;        
+    }
+};
+```
+
+## 135. 分发糖果
+https://leetcode.cn/problems/candy/description/?envType=study-plan-v2&envId=top-interview-150
+
+【题干】
+
+`n` 个孩子站成一排。给你一个整数数组 `ratings` 表示每个孩子的评分。
+
+你需要按照以下要求，给这些孩子分发糖果：
+
+- 每个孩子至少分配到 1 个糖果。
+- 相邻两个孩子中，评分更高的那个会获得更多的糖果。
+
+请你给每个孩子分发糖果，计算并返回需要准备的 最少糖果数目 。
+
+【分析】
+
+至少一个，相邻的大者多一个，总数量最少 -> 相邻的谁大谁多一个
+
+可能左边大，可能右边大，那不妨从左侧、右侧分别遍历一次，然后取两者的较大值。
+
+> 为什么不是较小值？因为取了较小值后，另一个无法满足比领居多 1 个糖果。
+
+【代码】
+
+```c++
+class Solution {
+public:
+    int candy(vector<int>& ratings) {
+        int n = ratings.size();
+        vector<int> left(n);
+        left[0] = 1;
+        for(int i = 1; i < n; i++){
+            if(ratings[i] > ratings[i - 1]){
+                left[i] = 1 + left[i - 1]; // 大的比小的多 1 个
+            } else {
+                left[i] = 1; // 变成了小的
+            }
+        }
+
+        int right = 0, total = 0;
+        for(int i = n - 1; i >= 0; i--){
+            if(i < n - 1 && ratings[i] > ratings[i + 1]){
+                right++; 
+            } else {
+                right = 1; 
+            }
+            total += max(left[i], right);
+        }
+        return total;
+    }
+};
+```
+
+
+## 58.最后一个单词的长度
+https://leetcode.cn/problems/length-of-last-word/?envType=study-plan-v2&envId=top-interview-150
+
+【题干】
+
+给你一个字符串 `s`，由若干单词组成，单词前后用一些空格字符隔开。返回字符串中 最后一个 单词的长度。
+
+单词 是指仅由字母组成、不包含任何空格字符的最大子字符串。
+
+【分析】
+
+倒序遍历字符串。不是空格长度+1，停止条件为遇到空格且长度大于 0（表示最后一个单词遍历完成）
+
+【代码】
+
+```c++
+class Solution {
+public:
+    int lengthOfLastWord(string s) {
+        int count = 0;
+        for(int i = s.size() - 1; i >= 0; i--){
+            if(s[i] != ' '){
+                count++;
+            } else if(count > 0){
+                break;
+            }
+        }
+        return count;
+    }
+};
+```
+
+## 14.最长公共前缀
+https://leetcode.cn/problems/longest-common-prefix/description/?envType=study-plan-v2&envId=top-interview-150
+
+【题干】
+
+编写一个函数来查找字符串数组中的最长公共前缀。
+
+如果不存在公共前缀，返回空字符串 `""`。
+
+【分析】
+
+暴力解法，双循环。按位检查字符是否都在每一个字符串内。
+
+【代码】
+
+```c++
+class Solution {
+public:
+    string longestCommonPrefix(vector<string>& strs) {
+        if(strs.size() == 0)
+            return "";
+        string prefix = "";
+        char c;
+        string s = strs[0];
+        for(int i = 0; i < s.size(); i++){
+            c = s[i];
+            if(checkChar(strs, i, c)){
+                prefix += c;
+            } else {
+                break;
+            }
+        }
+
+        return prefix;
+    }
+
+    bool checkChar(vector<string>& strs, int a, int c){
+        for(string s: strs){
+            if(c != s[a]){
+                return false;
+            }
+        }
+        return true;
+    }
+};
+```
+
+## 28.找出字符串中第一个匹配项的下标
+
+https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/?envType=study-plan-v2&envId=top-interview-150
+
+【题干】
+
+给你两个字符串 `haystack` 和 `needle` ，请你在 `haystack` 字符串中找出 `needle` 字符串的第一个匹配项的下标（下标从 0 开始）。如果 `needle` 不是 `haystack` 的一部分，则返回  -1 。
+
+【分析】
+
+暴力法：可以让字符串 needle 与字符串 haystack 的所有长度为 m 的子串均匹配一次。
+
+学过 408 的都知道，字符串匹配有一个经典算法：Knuth-Morris-Pratt 算法，简称 KMP 算法。
+
+官解：https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/solutions/732236/shi-xian-strstr-by-leetcode-solution-ds6y/?envType=study-plan-v2&envId=top-interview-150
+
+【代码】
+
+来自官解的 KMP 算法。
+
+```c++
+class Solution {
+public:
+    int strStr(string haystack, string needle) {
+        int n = haystack.size(), m = needle.size();
+        if (m == 0) {
+            return 0;
+        }
+        vector<int> pi(m);
+        for (int i = 1, j = 0; i < m; i++) {
+            while (j > 0 && needle[i] != needle[j]) {
+                j = pi[j - 1];
+            }
+            if (needle[i] == needle[j]) {
+                j++;
+            }
+            pi[i] = j;
+        }
+        for (int i = 0, j = 0; i < n; i++) {
+            while (j > 0 && haystack[i] != needle[j]) {
+                j = pi[j - 1];
+            }
+            if (haystack[i] == needle[j]) {
+                j++;
+            }
+            if (j == m) {
+                return i - m + 1;
+            }
+        }
+        return -1;
+    }
+};
+```
+
+
