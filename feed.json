@@ -1,0 +1,50 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "第 10086 次重启",
+    "home_page_url": "https://amireon.github.io/",
+    "feed_url": "https://amireon.github.io/feed.json",
+    "description": "随便写写记记",
+    "icon": "https://amireon.github.io/avatar.jpeg",
+    "author": {
+        "name": "Amireon",
+        "url": "https://github.com/amireon"
+    },
+    "items": [
+        {
+            "id": "https://amireon.github.io/posts/top-interview-150-twopointers",
+            "content_html": "<h2>283. 移动零</h2>\n<p>【题干】</p>\n<p>给定一个数组 <code>nums</code>，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。</p>\n<p>请注意 ，必须在不复制数组的情况下原地对数组进行操作。</p>\n<br/><p>访问 <a href=\"https://amireon.github.io/posts/top-interview-150-twopointers\" target=\"_blank\">https://amireon.github.io/posts/top-interview-150-twopointers</a> 阅读全文。</p>",
+            "url": "https://amireon.github.io/posts/top-interview-150-twopointers",
+            "title": "面试经典 150 题之双指针篇",
+            "date_modified": "2025-08-01T00:00:00.000Z",
+            "date_published": "2025-08-10T00:00:00.000Z",
+            "author": {
+                "name": "Amireon",
+                "url": "https://github.com/amireon"
+            }
+        },
+        {
+            "id": "https://amireon.github.io/posts/top-100-liked-hash",
+            "content_html": "<h2>1. 两数之和</h2>\n<p><a href=\"https://leetcode.cn/problems/two-sum/description/?envType=study-plan-v2&amp;envId=top-100-li\">https://leetcode.cn/problems/two-sum/description/?envType=study-plan-v2&amp;envId=top-100-li</a></p>\n<br/><p>访问 <a href=\"https://amireon.github.io/posts/top-100-liked-hash\" target=\"_blank\">https://amireon.github.io/posts/top-100-liked-hash</a> 阅读全文。</p>",
+            "url": "https://amireon.github.io/posts/top-100-liked-hash",
+            "title": "力扣热题 100 之哈希",
+            "date_modified": "2025-07-29T00:00:00.000Z",
+            "date_published": "2025-07-29T00:00:00.000Z",
+            "author": {
+                "name": "Amireon",
+                "url": "https://github.com/amireon"
+            }
+        },
+        {
+            "id": "https://amireon.github.io/posts/top-interview-150-array",
+            "content_html": "<p>LeetCode 链接：<a href=\"https://leetcode.cn/studyplan/top-interview-150/\">https://leetcode.cn/studyplan/top-interview-150/</a></p>\n<h2>88.合并两个有序数组</h2>\n<p><a href=\"https://leetcode.cn/p\">https://leetcode.cn/p</a></p>\n<br/><p>访问 <a href=\"https://amireon.github.io/posts/top-interview-150-array\" target=\"_blank\">https://amireon.github.io/posts/top-interview-150-array</a> 阅读全文。</p>",
+            "url": "https://amireon.github.io/posts/top-interview-150-array",
+            "title": "面试经典 150 题之数组/字符串篇",
+            "date_modified": "2025-07-14T00:00:00.000Z",
+            "date_published": "2025-07-29T00:00:00.000Z",
+            "author": {
+                "name": "Amireon",
+                "url": "https://github.com/amireon"
+            }
+        }
+    ]
+}

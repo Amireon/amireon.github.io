@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>第 10086 次重启</title>
+        <link>https://amireon.github.io/</link>
+        <description>随便写写记记</description>
+        <lastBuildDate>Sun, 10 Aug 2025 11:16:19 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>第 10086 次重启</title>
+            <url>https://amireon.github.io/avatar.jpeg</url>
+            <link>https://amireon.github.io/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2025 © Amireon</copyright>
+        <atom:link href="https://amireon.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[面试经典 150 题之双指针篇]]></title>
+            <link>https://amireon.github.io/posts/top-interview-150-twopointers</link>
+            <guid isPermaLink="false">https://amireon.github.io/posts/top-interview-150-twopointers</guid>
+            <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>283. 移动零</h2>
+<p>【题干】</p>
+<p>给定一个数组 <code>nums</code>，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。</p>
+<p>请注意 ，必须在不复制数组的情况下原地对数组进行操作。</p>
+<br/><p>访问 <a href="https://amireon.github.io/posts/top-interview-150-twopointers" target="_blank">https://amireon.github.io/posts/top-interview-150-twopointers</a> 阅读全文。</p>]]></content:encoded>
+            <author>yyycwe@qq.com (Amireon)</author>
+        </item>
+        <item>
+            <title><![CDATA[力扣热题 100 之哈希]]></title>
+            <link>https://amireon.github.io/posts/top-100-liked-hash</link>
+            <guid isPermaLink="false">https://amireon.github.io/posts/top-100-liked-hash</guid>
+            <pubDate>Tue, 29 Jul 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>1. 两数之和</h2>
+<p><a href="https://leetcode.cn/problems/two-sum/description/?envType=study-plan-v2&amp;envId=top-100-li">https://leetcode.cn/problems/two-sum/description/?envType=study-plan-v2&amp;envId=top-100-li</a></p>
+<br/><p>访问 <a href="https://amireon.github.io/posts/top-100-liked-hash" target="_blank">https://amireon.github.io/posts/top-100-liked-hash</a> 阅读全文。</p>]]></content:encoded>
+            <author>yyycwe@qq.com (Amireon)</author>
+        </item>
+        <item>
+            <title><![CDATA[面试经典 150 题之数组/字符串篇]]></title>
+            <link>https://amireon.github.io/posts/top-interview-150-array</link>
+            <guid isPermaLink="false">https://amireon.github.io/posts/top-interview-150-array</guid>
+            <pubDate>Tue, 29 Jul 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>LeetCode 链接：<a href="https://leetcode.cn/studyplan/top-interview-150/">https://leetcode.cn/studyplan/top-interview-150/</a></p>
+<h2>88.合并两个有序数组</h2>
+<p><a href="https://leetcode.cn/p">https://leetcode.cn/p</a></p>
+<br/><p>访问 <a href="https://amireon.github.io/posts/top-interview-150-array" target="_blank">https://amireon.github.io/posts/top-interview-150-array</a> 阅读全文。</p>]]></content:encoded>
+            <author>yyycwe@qq.com (Amireon)</author>
+        </item>
+    </channel>
+</rss>
